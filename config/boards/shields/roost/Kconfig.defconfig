@@ -1,0 +1,19 @@
+# Copyright (c) 2021 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_ROOST_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Roost"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_ROOST_LEFT || SHIELD_ROOST_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
