@@ -16,6 +16,7 @@ compatible = "zmk,combos";
     key-positions = <KEYPOS>; \
   };
 
+COMBO(togkeypad, &tog 2, 34, 35)
 COMBO(esc, &kp ESC, 0 1)
 COMBO(underscore, &kp UNDER, 1 2)
 COMBO(dash, &kp MINUS, 2 3)

@@ -53,7 +53,7 @@
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                  &kp Z         &kp X         &kp C         &kp D         &kp V	           &kp K         &kp H         &kp COMMA     &kp DOT       &hm QMARK SLASH
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                             &kp LCTRL     &mo  1        &lt 2 RET         &kp SPACE     &kp RSHFT     &kp RGUI
+                                             &kp LCTRL     &mo  1        &kp RET           &kp SPACE     &kp RSHFT     &kp RGUI
             //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 		  >;
         };
@@ -61,13 +61,13 @@
         nav_layer {
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 &kp ESC       &kp LG(W)     &kp XXX       &kp RG(X)     &kp XXX           &kp selAll    &kp ctLeft    &kp ctRight   &kp PG_UP     &kp DEL
+                 &kp CAPS      &kp XXX       &kp XXX       &kp XXX       &kp RG(X)         &kp XXX       &kp XXX       &kp XXX       &kp PG_UP     &kp DEL
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &kp CAPS      &kp rGra      &kp rsGra     &kp RG(C)     &kp XXX           &kp XXX       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
+                 &kp rGra      &kp rsGra     &kp ctLeft    &kp ctRight   &kp RG(C)         &kp selAll    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &kp unDo      &kp reDo      &kp XXX       &kp RG(V)     &kp XXX           &kp iHOMsel   &kp iHOMsel   &kp XXX       &kp PG_DN     &kp iENDsel
+                 &kp unDo      &kp reDo      &kp XXX       &kp XXX       &kp RG(V)         &kp iHOMsel   &kp iHOMsel   &kp iENDsel   &kp PG_DN     &kp iENDsel
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                             ___           &kp XXX       &skq LALT         &kp RG(LEFT)  &kp RG(RIGHT) ___
+                                             ___           &kp XXX       &skq LALT         &kp RG(LEFT)  &kp RG(RIGHT) &kp RG(RIGHT)
             //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
             >;
         };
