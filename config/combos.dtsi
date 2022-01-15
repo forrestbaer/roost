@@ -19,7 +19,7 @@ compatible = "zmk,combos";
 COMBO(togkeypad, &tog 2, 28 29) 
 COMBO(esc, &kp ESC, 0 1)
 COMBO(dash, &kp MINUS, 1 2)
-COMBO(plus, &kp PLUS, 3 4)
+COMBO(plus, &kp PLUS, 2 3)
 COMBO(equals, &kp EQUAL, 3 4)
 COMBO(bluetooth_clear, &bt BT_CLR, 0 1 2 3 4)
 COMBO(left_bracket, &kp LBKT, 5 6)
