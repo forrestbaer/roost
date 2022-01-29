@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
  
-#include "roost.dtsi"
+#include "roostv2.dtsi"
 
 &default_transform {
 	col-offset = <18>;
