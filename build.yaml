@@ -17,3 +17,7 @@ include:
     shield: roost_left
   - board: nice_nano_v2
     shield: roost_right
+  - board: nice_nano_v2
+    shield: roostv2_left
+  - board: nice_nano_v2
+    shield: roostv2_right
