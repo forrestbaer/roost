@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "roost.h"
+#include "roostv2.h"
 
 &mt {
     tapping-term-ms = <300>;
