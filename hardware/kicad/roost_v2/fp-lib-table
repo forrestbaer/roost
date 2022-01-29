@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name "roostv2")(type "KiCad")(uri "${KIPRJMOD}/roostv2.pretty")(options "")(descr ""))
-)

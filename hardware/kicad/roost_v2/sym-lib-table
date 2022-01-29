@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name "roostv2")(type "KiCad")(uri "${KIPRJMOD}/roostv2.kicad_sym")(options "")(descr "")(disabled))
-  (lib (name "nicenano")(type "Legacy")(uri "${KIPRJMOD}/nice_nano.lib")(options "")(descr ""))
-)
