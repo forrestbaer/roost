@@ -61,11 +61,11 @@
       nav_layer {
           bindings = <
           // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-               &kp CAPS      &kp XXX       &kp XXX       &kp XXX       &kp RG(X)         &kp XXX       &kp XXX       &kp XXX       &kp PG_UP     &kp DEL
+                &kp N1       &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8        &kp N9        &kp N0
           // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                &kp rGra      &kp rsGra     &kp ctLeft    &kp ctRight   &kp RG(C)         &kp selAll    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
           // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-               &kp unDo      &kp reDo      &kp XXX       &kp XXX       &kp RG(V)         &kp iHOMsel   &kp iHOMsel   &kp iENDsel   &kp PG_DN     &kp iENDsel
+               &kp unDo      &kp reDo      &kp XXX       &kp RG(X)     &kp RG(V)         &kp iHOMsel   &kp iHOMsel   &kp PG_UP     &kp PG_DN     &kp iENDsel
           // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                            ___           &kp XXX       &skq LALT         &kp RG(LEFT)  &kp RG(RIGHT) &kp RG(RIGHT)
           //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
