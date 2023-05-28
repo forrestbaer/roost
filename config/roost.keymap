@@ -1,13 +1,24 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "roost.h"
+
+#define XXX &none
+#define ___ &trans
+#define iHOMsel RG(RS(LEFT))
+#define iENDsel RG(RS(RIGHT))
+#define selAll RG(A)
+#define ctRight LC(TAB)
+#define ctLeft LC(RS(TAB))
+#define rGra RG(GRAVE)
+#define rsGra RG(RS(GRAVE))
+#define reDo RG(RS(Z))
+#define unDo RG(Z)
 
 &mt {
     tapping-term-ms = <300>;
 };
 
-/ { 
+/ {
     behaviors {
         hm: hold_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -42,12 +53,12 @@
     };
 
     keymap {
-            compatible = "zmk,keymap";
-            
+      compatible = "zmk,keymap";
+
     	default_layer {
     		bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp BSPC 
+                 &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp BSPC
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                  &kp A         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp O
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -57,7 +68,7 @@
             //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 		    >;
       };
-		  
+
       nav_layer {
           bindings = <
           // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
@@ -67,23 +78,23 @@
           // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                &kp unDo      &kp reDo      &kp XXX       &kp RG(X)     &kp RG(V)         &kp iHOMsel   &kp iHOMsel   &kp PG_DN     &kp PG_UP     &kp iENDsel
           // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                           &kp tmuxKey   &kp XXX       &skq LALT         &kp RG(LEFT)  &kp RSHFT     &kp RG(RIGHT)
+                                           &kp ___       &kp XXX       &skq LALT         &kp RG(LEFT)  &kp RSHFT     &kp RG(RIGHT)
           //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
           >;
       };
-      
+
       num_layer {
           bindings = <
           // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                &kp F1        &kp F2        &kp F3        &kp F4        &kp C_VOL_UP      &kp PLUS      &kp N7        &kp N8        &kp N9        &kp BSPC
           // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-               &kp F5        &kp F6        &kp F7        &kp F8        &kp C_PP          &kp MINUS     &kp N4        &kp N5        &kp N6        &kp CARET 
+               &kp F5        &kp F6        &kp F7        &kp F8        &kp C_PP          &kp MINUS     &kp N4        &kp N5        &kp N6        &kp CARET
           // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-               &kp F9        &kp F10       &kp F11       &kp F12       &kp C_VOL_DN      &kp STAR      &kp N1        &kp N2        &kp N3        &kp SLASH 
+               &kp F9        &kp F10       &kp F11       &kp F12       &kp C_VOL_DN      &kp STAR      &kp N1        &kp N2        &kp N3        &kp SLASH
           // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                           &kp LCTRL     &kp LGUI      &kp RET           &kp SPACE     &kp N0        &kp DOT 
+                                           &kp LCTRL     &kp LGUI      &kp RET           &kp SPACE     &kp N0        &kp DOT
           //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
           >;
-      };   
+      };
     };
 };
